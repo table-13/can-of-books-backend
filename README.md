@@ -21,15 +21,15 @@
 ## Estimates
 <!-- See below -->
 ```
-Name of feature: ________________________________
+Name of feature: Can of Books BackEnd
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 4 hr
 
-Start time: _____
+Start time: 2 pm
 
-Finish time: _____
+Finish time: 730 PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 5 hr 30 min
 ```
 
 ## Credit and Collaborations
