@@ -83,4 +83,23 @@ app.get("/books/", async (request, response) => {
   response.send(books);
 });
 
+app.put("/books/:id/:email", async (request, response) => {
+  const id = request.params.id;
+  const email = request.params.email;
+  console.log(id);
+  try {
+    const bookToUpdate = await Book.findOne({ _id: id, email: email });
+    if (!bookToUpdate) {
+      response.status(400).send("Unable to update book");
+      return;
+    }
+    const updatedBook = await Book.findByIdAndUpdate(id, request.body, {
+      new: true,
+    });
+    response.send(updatedBook);
+  } catch (error) {
+    response.status(400).send("unable to update book");
+  }
+});
+
 app.listen(PORT, () => console.log(`listening on PORT ${PORT}`));
