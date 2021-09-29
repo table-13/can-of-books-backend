@@ -14,9 +14,11 @@
 
 ## Change Log
 09-27-2021 15:05 - Project front-end initialized using Create React App and pushed to Github
+09-28-2021 16:38 - Added POST and DELETE routes
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+
 
 ## Estimates
 <!-- See below -->
