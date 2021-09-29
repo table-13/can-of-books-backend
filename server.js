@@ -63,7 +63,7 @@ app.post("/books", async (request, response) => {
 app.delete("/books/:id/:email", async (request, response) => {
   const id = request.params.id;
   const email = request.params.email;
-
+  console.log(id, email);
   const book = await Book.findById(id);
 
   if (email) {
