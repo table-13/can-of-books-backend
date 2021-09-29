@@ -46,12 +46,14 @@ app.use(express.json());
 app.post("/books", async (request, response) => {
   try {
     const bookInfo = request.body;
+    console.log(bookInfo);
     const newBook = await Book.create({
       title: bookInfo.title,
       description: bookInfo.description,
       email: bookInfo.email,
       status: bookInfo.status,
     });
+    console.log(newBook);
     response.status(201).send(newBook);
   } catch (error) {
     response.status(500).send("Error creating boook");
@@ -65,9 +67,6 @@ app.delete("/books/:id/:email", async (request, response) => {
   const book = await Book.findById(id);
 
   if (email) {
-    console.log(book);
-    console.log(book.email);
-    console.log(book.title);
     if (book.email === email) {
       try {
         await Book.findByIdAndDelete(id);
@@ -81,7 +80,6 @@ app.delete("/books/:id/:email", async (request, response) => {
 
 app.get("/books/", async (request, response) => {
   const books = await Book.find({});
-  console.log(books);
   response.send(books);
 });
 
