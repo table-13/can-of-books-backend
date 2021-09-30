@@ -4,12 +4,15 @@
 **Version**: 0.0.1 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
+
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 ## Getting Started
+
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
+
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
@@ -18,13 +21,27 @@
 
 09-28-2021 16:38 - Added POST and DELETE routes
 
+09-29-2021 21:09 - Add PUT functionality and Modals
+
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
-
 ## Estimates
+
 <!-- See below -->
+
+```
+Name of feature: Lab 13
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 14:00
+
+Finish time: 21:00
+
+Actual time needed to complete: 7 hours
+```
 
 ```
 Name of feature: Add POST and DELETE
@@ -51,6 +68,7 @@ Actual time needed to complete: 5 hr 30 min
 ```
 
 ## Credit and Collaborations
+
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
 ### Logistical
@@ -110,4 +128,3 @@ Have a friendly discussion between the two and let the other know your grievance
 #### How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level?
 
 Be patient with each other and honest about our abilities. Ask periodically if something doesn’t make sense and whether or not a concept needs to be explained further.
-
