@@ -7,7 +7,7 @@ const app = express();
 const mongoose = require("mongoose");
 app.use(cors());
 const Book = require("./models/book");
-mongoose.connect("mongodb://localhost:27017/books");
+mongoose.connect(process.env.MONGODB_URI);
 app.use(express.json());
 
 // const anthonyBook = new Book({
