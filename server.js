@@ -83,12 +83,14 @@ app.get("/books/", async (request, response) => {
   response.send(books);
 });
 
-app.put("/books/:id/:email", async (request, response) => {
+app.put("/books/:id", async (request, response) => {
   const id = request.params.id;
-  const email = request.params.email;
+  const email = request.query.email;
+  console.log(email);
   console.log(id);
+  console.log(request.query);
   try {
-    const bookToUpdate = await Book.findOne({ _id: id, email: email });
+    const bookToUpdate = await Book.findOne({ _id: id });
     if (!bookToUpdate) {
       response.status(400).send("Unable to update book");
       return;
