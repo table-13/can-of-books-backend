@@ -23,6 +23,8 @@
 
 09-29-2021 21:09 - Add PUT functionality and Modals
 
+09-30-2021 18:50 - Add OAuth feature
+
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
@@ -30,6 +32,18 @@
 ## Estimates
 
 <!-- See below -->
+
+```
+Name of feature: Lab 14
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 14:00
+
+Finish time: 18:50
+
+Actual time needed to complete: 4:50 hours
+```
 
 ```
 Name of feature: Lab 13
