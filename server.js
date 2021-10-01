@@ -103,4 +103,15 @@ app.put("/books/:id", async (request, response) => {
   }
 });
 
+// AUTH
+app.get("/user", async (request, response) => {
+  verifyUser(request, (err, user) => {
+    if (err) {
+      response.send("invalid token");
+    } else {
+      response.send(user);
+    }
+  });
+});
+
 app.listen(PORT, () => console.log(`listening on PORT ${PORT}`));
