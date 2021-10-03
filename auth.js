@@ -18,7 +18,6 @@ function getKey(header, callback) {
 function verifyUser(request, errOrUserCallback) {
   try {
     const token = request.headers.authorization.split(" ")[1];
-
     jwt.verify(token, getKey, {}, errOrUserCallback);
   } catch (error) {
     errOrUserCallback("Not Authorized");
