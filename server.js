@@ -77,7 +77,7 @@ app.delete("/books/:id/:email", async (request, response) => {
   }
 });
 
-app.get("/books/", async (request, response) => {
+app.get("/books", async (request, response) => {
   const books = await Book.find({});
   response.send(books);
 });
@@ -109,6 +109,8 @@ app.get("/user", async (request, response) => {
     if (err) {
       response.send("invalid token");
     } else {
+      console.log("TOKEN", user);
+
       response.send(user);
     }
   });
